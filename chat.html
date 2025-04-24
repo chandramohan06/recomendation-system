@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Recommendations - Product Recommendation Bot</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <h2>Product Recommender</h2>
+                <button id="close-sidebar" class="close-sidebar">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <nav class="sidebar-nav">
+                <ul>
+                    <li>
+                        <a href="index.html">
+                            <i class="fas fa-home"></i>
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="purchase-history.html">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span>Purchase History</span>
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a href="chat.html">
+                            <i class="fas fa-comment"></i>
+                            <span>Chat Recommendations</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="profile.html">
+                            <i class="fas fa-user"></i>
+                            <span>Profile</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="settings.html">
+                            <i class="fas fa-cog"></i>
+                            <span>Settings</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="main-header">
+                <button id="toggle-sidebar" class="toggle-sidebar">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <h1>Chat Recommendations</h1>
+                <div class="user-menu">
+                    <img src="https://via.placeholder.com/40" alt="User" class="user-avatar">
+                    <span class="user-name">John Doe</span>
+                </div>
+            </header>
+
+            <div class="dashboard-content">
+                <p class="section-description">Chat with our AI to get personalized product recommendations</p>
+
+                <div class="chat-container">
+                    <div class="chat-header">
+                        <h2>Product Recommendation Bot</h2>
+                        <p>Ask about products based on your interests and purchase history</p>
+                    </div>
+                    <div class="chat-messages" id="chat-messages">
+                        <!-- Messages will be loaded via JavaScript -->
+                    </div>
+                    <div class="chat-input-container">
+                        <form id="chat-form">
+                            <input type="text" id="chat-input" placeholder="Ask about product recommendations...">
+                            <button type="submit" class="btn send-btn">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/data.js"></script>
+    <script src="js/sidebar.js"></script>
+    <script src="js/chat.js"></script>
+</body>
+</html>

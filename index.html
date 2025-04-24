@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Recommendation Bot - Dashboard</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <h2>Product Recommender</h2>
+                <button id="close-sidebar" class="close-sidebar">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <nav class="sidebar-nav">
+                <ul>
+                    <li class="active">
+                        <a href="index.html">
+                            <i class="fas fa-home"></i>
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="purchase-history.html">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span>Purchase History</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="chat.html">
+                            <i class="fas fa-comment"></i>
+                            <span>Chat Recommendations</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="profile.html">
+                            <i class="fas fa-user"></i>
+                            <span>Profile</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="settings.html">
+                            <i class="fas fa-cog"></i>
+                            <span>Settings</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="main-header">
+                <button id="toggle-sidebar" class="toggle-sidebar">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <h1>Dashboard</h1>
+                <div class="user-menu">
+                    <img src="https://via.placeholder.com/40" alt="User" class="user-avatar">
+                    <span class="user-name">John Doe</span>
+                </div>
+            </header>
+
+            <div class="dashboard-content">
+                <div class="action-bar">
+                    <a href="chat.html" class="btn primary-btn">
+                        Get Recommendations
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <div class="stats-container">
+                    <div class="stat-card">
+                        <div class="stat-header">
+                            <h3>Total Purchases</h3>
+                            <i class="fas fa-shopping-bag"></i>
+                        </div>
+                        <div class="stat-content">
+                            <p class="stat-value">24</p>
+                            <p class="stat-change positive">+12% from last month</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-header">
+                            <h3>Favorite Category</h3>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="stat-content">
+                            <p class="stat-value">Electronics</p>
+                            <p class="stat-change">Based on 8 purchases</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-header">
+                            <h3>Recommendation Accuracy</h3>
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="stat-content">
+                            <p class="stat-value">94%</p>
+                            <p class="stat-change positive">+2% from last month</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dashboard-cards">
+                    <div class="card">
+                        <div class="card-header">
+                            <h2>Recent Purchases</h2>
+                            <p>Your latest product purchases</p>
+                        </div>
+                        <div class="card-content">
+                            <div class="purchase-list" id="recent-purchases">
+                                <!-- Purchases will be loaded via JavaScript -->
+                            </div>
+                            <a href="purchase-history.html" class="btn outline-btn full-width">View All Purchases</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <h2>Recommended For You</h2>
+                            <p>Based on your purchase history</p>
+                        </div>
+                        <div class="card-content">
+                            <div class="recommendation-list" id="recommended-products">
+                                <!-- Recommendations will be loaded via JavaScript -->
+                            </div>
+                            <a href="chat.html" class="btn outline-btn full-width">Get More Recommendations</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/data.js"></script>
+    <script src="js/sidebar.js"></script>
+    <script src="js/dashboard.js"></script>
+</body>
+</html>

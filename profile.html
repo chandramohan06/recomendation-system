@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - Product Recommendation Bot</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <h2>Product Recommender</h2>
+                <button id="close-sidebar" class="close-sidebar">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <nav class="sidebar-nav">
+                <ul>
+                    <li>
+                        <a href="index.html">
+                            <i class="fas fa-home"></i>
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="purchase-history.html">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span>Purchase History</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="chat.html">
+                            <i class="fas fa-comment"></i>
+                            <span>Chat Recommendations</span>
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a href="profile.html">
+                            <i class="fas fa-user"></i>
+                            <span>Profile</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="settings.html">
+                            <i class="fas fa-cog"></i>
+                            <span>Settings</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="main-header">
+                <button id="toggle-sidebar" class="toggle-sidebar">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <h1>Your Profile</h1>
+                <div class="user-menu">
+                    <img src="https://via.placeholder.com/40" alt="User" class="user-avatar">
+                    <span class="user-name">John Doe</span>
+                </div>
+            </header>
+
+            <div class="dashboard-content">
+                <p class="section-description">Manage your account and preferences</p>
+
+                <div class="profile-container">
+                    <div class="card">
+                        <div class="card-header">
+                            <h2>Personal Information</h2>
+                            <p>Your account details and preferences</p>
+                        </div>
+                        <div class="card-content">
+                            <div class="profile-info">
+                                <div class="profile-avatar-container">
+                                    <img src="https://via.placeholder.com/100" alt="User" class="profile-avatar">
+                                    <div class="profile-details">
+                                        <h3>John Doe</h3>
+                                        <p>john.doe@example.com</p>
+                                        <a href="#" class="link-btn">Change profile picture</a>
+                                    </div>
+                                </div>
+
+                                <div class="profile-field">
+                                    <h4>Member Since</h4>
+                                    <p>January 15, 2023</p>
+                                </div>
+
+                                <div class="profile-field">
+                                    <h4>Location</h4>
+                                    <p>New York, USA</p>
+                                </div>
+
+                                <button class="btn primary-btn">Edit Profile</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header">
+                            <h2>Shopping Preferences</h2>
+                            <p>Your preferred categories and interests</p>
+                        </div>
+                        <div class="card-content">
+                            <div class="profile-field">
+                                <h4>Favorite Categories</h4>
+                                <div class="badge-container">
+                                    <span class="badge primary">Electronics</span>
+                                    <span class="badge primary">Sports</span>
+                                    <span class="badge primary">Home</span>
+                                    <span class="badge outline">Books</span>
+                                    <span class="badge outline">Fashion</span>
+                                </div>
+                            </div>
+
+                            <div class="profile-field">
+                                <h4>Price Range</h4>
+                                <p>$50 - $500</p>
+                            </div>
+
+                            <div class="profile-field">
+                                <h4>Recommendation Settings</h4>
+                                <p>Email recommendations: Weekly</p>
+                                <p>Push notifications: On</p>
+                                <p>Similar product alerts: On</p>
+                            </div>
+
+                            <button class="btn primary-btn">Update Preferences</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/data.js"></script>
+    <script src="js/sidebar.js"></script>
+</body>
+</html>

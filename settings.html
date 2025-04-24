@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings - Product Recommendation Bot</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <h2>Product Recommender</h2>
+                <button id="close-sidebar" class="close-sidebar">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <nav class="sidebar-nav">
+                <ul>
+                    <li>
+                        <a href="index.html">
+                            <i class="fas fa-home"></i>
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="purchase-history.html">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span>Purchase History</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="chat.html">
+                            <i class="fas fa-comment"></i>
+                            <span>Chat Recommendations</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="profile.html">
+                            <i class="fas fa-user"></i>
+                            <span>Profile</span>
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a href="settings.html">
+                            <i class="fas fa-cog"></i>
+                            <span>Settings</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="main-header">
+                <button id="toggle-sidebar" class="toggle-sidebar">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <h1>Settings</h1>
+                <div class="user-menu">
+                    <img src="https://via.placeholder.com/40" alt="User" class="user-avatar">
+                    <span class="user-name">John Doe</span>
+                </div>
+            </header>
+
+            <div class="dashboard-content">
+                <p class="section-description">Manage your account settings and preferences</p>
+
+                <div class="card full-width">
+                    <div class="card-header">
+                        <h2>Notification Settings</h2>
+                        <p>Control how you receive notifications and updates</p>
+                    </div>
+                    <div class="card-content">
+                        <div class="settings-list">
+                            <div class="setting-item">
+                                <div class="setting-info">
+                                    <h4>Email Notifications</h4>
+                                    <p>Receive product recommendations via email</p>
+                                </div>
+                                <label class="switch">
+                                    <input type="checkbox" checked>
+                                    <span class="slider round"></span>
+                                </label>
+                            </div>
+                            <div class="divider"></div>
+                            <div class="setting-item">
+                                <div class="setting-info">
+                                    <h4>Push Notifications</h4>
+                                    <p>Receive alerts on your device</p>
+                                </div>
+                                <label class="switch">
+                                    <input type="checkbox" checked>
+                                    <span class="slider round"></span>
+                                </label>
+                            </div>
+                            <div class="divider"></div>
+                            <div class="setting-item">
+                                <div class="setting-info">
+                                    <h4>Marketing Emails</h4>
+                                    <p>Receive promotional offers and deals</p>
+                                </div>
+                                <label class="switch">
+                                    <input type="checkbox">
+                                    <span class="slider round"></span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card full-width">
+                    <div class="card-header">
+                        <h2>Recommendation Settings</h2>
+                        <p>Customize how product recommendations work for you</p>
+                    </div>
+                    <div class="card-content">
+                        <div class="settings-list">
+                            <div class="setting-item">
+                                <div class="setting-info">
+                                    <h4>Use Purchase History</h4>
+                                    <p>Base recommendations on what you've bought</p>
+                                </div>
+                                <label class="switch">
+                                    <input type="checkbox" checked>
+                                    <span class="slider round"></span>
+                                </label>
+                            </div>
+                            <div class="divider"></div>
+                            <div class="setting-item">
+                                <div class="setting-info">
+                                    <h4>Use Browsing History</h4>
+                                    <p>Base recommendations on products you've viewed</p>
+                                </div>
+                                <label class="switch">
+                                    <input type="checkbox" checked>
+                                    <span class="slider round"></span>
+                                </label>
+                            </div>
+                            <div class="divider"></div>
+                            <div class="setting-item">
+                                <div class="setting-info">
+                                    <h4>Similar Products</h4>
+                                    <p>Show products similar to ones you like</p>
+                                </div>
+                                <label class="switch">
+                                    <input type="checkbox" checked>
+                                    <span class="slider round"></span>
+                                </label>
+                            </div>
+                        </div>
+                        <button class="btn primary-btn">Save Settings</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/data.js"></script>
+    <script src="js/sidebar.js"></script>
+</body>
+</html>
